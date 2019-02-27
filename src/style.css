@@ -1,0 +1,42 @@
+.container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.name{
+  font-weight: 1000;
+  border-bottom : 2px dotted black;
+}
+.tooltip-container{
+ position: relative;
+}
+
+.userName{
+  color:lightgray
+}
+
+.tooltip{
+  visibility: hidden;
+  display:flex;
+  flex-direction: column;
+  width: 150%;
+  background-color:rgb(231, 243, 255);
+  border: 1px solid  black;
+  position: absolute;
+  z-index:1;
+  top:0%;
+  left:100%;
+  margin-left:10px;
+  padding:10px;
+}
+.tooltip p{
+  margin:0;
+}
+.tooltip-container:hover .tooltip{
+  visibility: visible;
+}
+
+.list-container{
+  display: flex;
+  flex-direction: column;
+}
