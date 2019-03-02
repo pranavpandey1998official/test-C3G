@@ -17,7 +17,7 @@ class App extends Component {
     var xhttp = new XMLHttpRequest();
     var app=this;
     xhttp.onreadystatechange = function() {
-        if (xhttp.readyState == 4 && xhttp.status == 200) {
+        if (xhttp.readyState === 4 && xhttp.status === 200) {
           var jsonResponse=JSON.parse(xhttp.responseText)
             app.setState({users:jsonResponse ,
             isloading:false});
