@@ -41,6 +41,7 @@
 }
 
 #list-container{
+  cursor: default;
   padding: 1%;
   overflow-y: scroll;
   height:60%;

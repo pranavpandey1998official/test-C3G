@@ -17,8 +17,8 @@ import React from 'react';
   setPosition= () => {
     var element=document.getElementById(this.props.user.id)
     var listContainer=document.getElementById("list-container")
-    element.style.top=element.parentElement.offsetTop+20-listContainer.scrollTop;
-    element.style.left=element.parentElement.offsetWidth+element.parentElement.offsetLeft
+    element.style.top=element.parentElement.offsetTop+20-listContainer.scrollTop+"px"
+    element.style.left=element.parentElement.offsetWidth+element.parentElement.offsetLeft+"px"
   }
   
   render(){
